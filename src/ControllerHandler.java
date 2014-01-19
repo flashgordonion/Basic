@@ -10,7 +10,7 @@ public class ControllerHandler {
 	
 	public static void main(String args[]) {
 		
-		startController(1);
+		startController();
 		
 	}
 	
@@ -21,9 +21,9 @@ public class ControllerHandler {
 	 * @param selection Controller to be used
 	 * @return
 	 */
-	public static boolean startController(int selection) {
+	public static boolean startController() {
 		
-		xc = new XboxController(selection);
+		xc = new XboxController(1, 1);
 		
 		if(!xc.isConnected()) return false;	
 		
